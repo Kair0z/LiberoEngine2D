@@ -1,0 +1,23 @@
+-----------------------------------------------------------------
+ -- LiberoScene: Default Scene x3 -- 
+-----------------------------------------------------------------
+
+-- General Settings --
+ ... 
+
+
+-- GameObjects --
+--- GameObject: Input--- 
+- Transform2DComponent:
+Pos: [0, 0] 
+Rot: [0] 
+Scale: [0, 0] 
+
+- Unwritten Component: TODO... 
+
+- Unwritten Component: TODO... 
+
+- Unwritten Component: TODO... 
+
+
+

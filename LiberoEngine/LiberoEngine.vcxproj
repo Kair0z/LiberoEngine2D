@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Loader.cpp" />
+    <ClCompile Include="src\ContentMaster.cpp" />
+    <ClCompile Include="src\BulletComponent.cpp" />
+    <ClCompile Include="src\CharacterComponent.cpp" />
+    <ClCompile Include="src\ColliderComponent.cpp" />
+    <ClCompile Include="src\CoreSettings.cpp" />
+    <ClCompile Include="src\EventDispatcher.cpp" />
+    <ClCompile Include="src\FamilyTypeID.cpp" />
+    <ClCompile Include="src\FileMaster.cpp" />
+    <ClCompile Include="src\FPSComponent.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\GameTime.cpp" />
+    <ClCompile Include="src\GridComponent.cpp" />
+    <ClCompile Include="src\HierarchyWindowImGui.cpp" />
+    <ClCompile Include="src\ICharacterState.cpp" />
+    <ClCompile Include="src\ICommand.cpp" />
+    <ClCompile Include="src\IComponent.cpp" />
+    <ClCompile Include="src\IEvent.cpp" />
+    <ClCompile Include="src\ILibAllocator.cpp" />
+    <ClCompile Include="src\ImGui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\imgui_sdl.cpp" />
+    <ClCompile Include="src\ImmediateUI.cpp" />
+    <ClCompile Include="src\InputComponent.cpp" />
+    <ClCompile Include="src\InspectorWindowImGui.cpp" />
+    <ClCompile Include="src\IObserver.cpp" />
+    <ClCompile Include="src\IWindowImGui.cpp" />
+    <ClCompile Include="src\KeyEvent.cpp" />
+    <ClCompile Include="src\LiberoEngine.cpp" />
+    <ClCompile Include="src\LiberoGame.cpp" />
+    <ClCompile Include="src\LiberoRenderer_SDL.cpp" />
+    <ClCompile Include="src\LiberoUnix.cpp" />
+    <ClCompile Include="src\LiberoWindowBase.cpp" />
+    <ClCompile Include="src\LibLinearAllocator.cpp" />
+    <ClCompile Include="src\LibPoolAllocator.cpp" />
+    <ClCompile Include="src\LibStackAllocator.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\LoggerWindowImGui.cpp" />
+    <ClCompile Include="src\MemoryMaster.cpp" />
+    <ClCompile Include="src\MiscEvent.cpp" />
+    <ClCompile Include="src\MouseEvent.cpp" />
+    <ClCompile Include="src\Note.cpp" />
+    <ClCompile Include="src\PCH.cpp" />
+    <ClCompile Include="src\PhysicsMaster.cpp" />
+    <ClCompile Include="src\PlayWindowImGui.cpp" />
+    <ClCompile Include="src\RendererOpenGL.cpp" />
+    <ClCompile Include="src\RenderWindowImGui.cpp" />
+    <ClCompile Include="src\ResourcesWindowImGui.cpp" />
+    <ClCompile Include="src\RigidbodyComponent.cpp" />
+    <ClCompile Include="src\SceneManager.cpp" />
+    <ClCompile Include="src\InputMaster.cpp" />
+    <ClCompile Include="src\SpaceMath.cpp" />
+    <ClCompile Include="src\SpawnComponent.cpp" />
+    <ClCompile Include="src\SpriteComponent.cpp" />
+    <ClCompile Include="src\SubjectMaster.cpp" />
+    <ClCompile Include="src\SysBulletMovement.cpp" />
+    <ClCompile Include="src\SysDebugRendering.cpp" />
+    <ClCompile Include="src\SysInput.cpp" />
+    <ClCompile Include="src\SysMovement.cpp" />
+    <ClCompile Include="src\SysPhysics.cpp" />
+    <ClCompile Include="src\SysRendering.cpp" />
+    <ClCompile Include="src\SysSpriteAnimator.cpp" />
+    <ClCompile Include="src\TextComponent.cpp" />
+    <ClCompile Include="src\TextureComponent.cpp" />
+    <ClCompile Include="src\TopMenuImGui.cpp" />
+    <ClCompile Include="src\TransformComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Loader.h" />
+    <ClInclude Include="src\ContentMaster.h" />
+    <ClInclude Include="src\BulletComponent.h" />
+    <ClInclude Include="src\CharacterComponent.h" />
+    <ClInclude Include="src\ColliderComponent.h" />
+    <ClInclude Include="src\Component.h" />
+    <ClInclude Include="src\ComponentContainer.h" />
+    <ClInclude Include="src\CoreSettings.h" />
+    <ClInclude Include="src\ECS_Defines.h" />
+    <ClInclude Include="src\ECS_Engine.h" />
+    <ClInclude Include="src\ECS_Includes.h" />
+    <ClInclude Include="src\Entity.h" />
+    <ClInclude Include="src\EntityContainer.h" />
+    <ClInclude Include="src\Event.h" />
+    <ClInclude Include="src\EventContainer.h" />
+    <ClInclude Include="src\EventDispatcher.h" />
+    <ClInclude Include="src\EventMaster.h" />
+    <ClInclude Include="src\FamilyTypeID.h" />
+    <ClInclude Include="src\FileMaster.h" />
+    <ClInclude Include="src\FPSComponent.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\GameTime.h" />
+    <ClInclude Include="src\GridComponent.h" />
+    <ClInclude Include="src\Handle.h" />
+    <ClInclude Include="src\HierarchyWindowImGui.h" />
+    <ClInclude Include="src\ICharacterState.h" />
+    <ClInclude Include="src\ICommand.h" />
+    <ClInclude Include="src\IComponent.h" />
+    <ClInclude Include="src\IEntity.h" />
+    <ClInclude Include="src\IEvent.h" />
+    <ClInclude Include="src\ILibAllocator.h" />
+    <ClInclude Include="src\ILiberoLocator.h" />
+    <ClInclude Include="src\ImGuiPremadeWindows.h" />
+    <ClInclude Include="src\ImGuiStyleLibrary.h" />
+    <ClInclude Include="src\ImGui\imconfig.h" />
+    <ClInclude Include="src\ImGui\imgui.h" />
+    <ClInclude Include="src\ImGui\imgui_internal.h" />
+    <ClInclude Include="src\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="src\ImGui\imstb_textedit.h" />
+    <ClInclude Include="src\ImGui\imstb_truetype.h" />
+    <ClInclude Include="src\imgui_sdl.h" />
+    <ClInclude Include="src\ImmediateUI.h" />
+    <ClInclude Include="src\InputComponent.h" />
+    <ClInclude Include="src\InspectorWindowImGui.h" />
+    <ClInclude Include="src\IObserver.h" />
+    <ClInclude Include="src\ISystem.h" />
+    <ClInclude Include="src\IWindowImGui.h" />
+    <ClInclude Include="src\KeyEvent.h" />
+    <ClInclude Include="src\LiberoCore.h" />
+    <ClInclude Include="src\LiberoECS_ComponentMaster.h" />
+    <ClInclude Include="src\LiberoECS_EntityMaster.h" />
+    <ClInclude Include="src\LiberoECS_SystemMaster.h" />
+    <ClInclude Include="src\LiberoEngine.h" />
+    <ClInclude Include="src\LiberoGame.h" />
+    <ClInclude Include="src\LiberoMacros.h" />
+    <ClInclude Include="src\LiberoMath.h" />
+    <ClInclude Include="src\LiberoMemory.h" />
+    <ClInclude Include="src\LiberoRenderer.h" />
+    <ClInclude Include="src\LiberoRenderer_SDL.h" />
+    <ClInclude Include="src\LiberoScene.h" />
+    <ClInclude Include="src\LiberoSystems.h" />
+    <ClInclude Include="src\LiberoUnix.h" />
+    <ClInclude Include="src\LiberoWindowBase.h" />
+    <ClInclude Include="src\LibLinearAllocator.h" />
+    <ClInclude Include="src\LibMemoryChunkAllocator.h" />
+    <ClInclude Include="src\LibPoolAllocator.h" />
+    <ClInclude Include="src\LibStackAllocator.h" />
+    <ClInclude Include="src\Logger.h" />
+    <ClInclude Include="src\LoggerWindowImGui.h" />
+    <ClInclude Include="src\MemoryMaster.h" />
+    <ClInclude Include="src\MiscEvent.h" />
+    <ClInclude Include="src\MouseEvent.h" />
+    <ClInclude Include="src\MyComponents.h" />
+    <ClInclude Include="src\Note.h" />
+    <ClInclude Include="src\PCH.h" />
+    <ClInclude Include="src\PhysicsMaster.h" />
+    <ClInclude Include="src\PlayWindowImGui.h" />
+    <ClInclude Include="src\RendererOpenGL.h" />
+    <ClInclude Include="src\RenderWindowImGui.h" />
+    <ClInclude Include="src\ResourcesWindowImGui.h" />
+    <ClInclude Include="src\RigidbodyComponent.h" />
+    <ClInclude Include="src\SceneManager.h" />
+    <ClInclude Include="src\InputMaster.h" />
+    <ClInclude Include="src\SpaceMath.h" />
+    <ClInclude Include="src\SpawnComponent.h" />
+    <ClInclude Include="src\SpriteComponent.h" />
+    <ClInclude Include="src\SubjectMaster.h" />
+    <ClInclude Include="src\SysBulletMovement.h" />
+    <ClInclude Include="src\SysDebugRendering.h" />
+    <ClInclude Include="src\SysInput.h" />
+    <ClInclude Include="src\SysMovement.h" />
+    <ClInclude Include="src\SysPhysics.h" />
+    <ClInclude Include="src\SysRendering.h" />
+    <ClInclude Include="src\SysSpriteAnimator.h" />
+    <ClInclude Include="src\System.h" />
+    <ClInclude Include="src\TextComponent.h" />
+    <ClInclude Include="src\TextureComponent.h" />
+    <ClInclude Include="src\TopMenuImGui.h" />
+    <ClInclude Include="src\TransformComponent.h" />
+    <ClInclude Include="src\Vector.h" />
+    <ClInclude Include="src\Vector2.h" />
+    <ClInclude Include="src\Vector3.h" />
+    <ClInclude Include="src\Vector4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Component.inl" />
+    <None Include="src\ECS_Engine.inl" />
+    <None Include="src\Entity.inl" />
+    <None Include="src\EntityContainer.inl" />
+    <None Include="src\Event.inl" />
+    <None Include="src\EventMaster.inl" />
+    <None Include="src\IEntity.inl" />
+    <None Include="src\ILiberoLocator.inl" />
+    <None Include="src\ISystem.inl" />
+    <None Include="src\LiberoECS_ComponentMaster.inl" />
+    <None Include="src\LiberoECS_EntityMaster.inl" />
+    <None Include="src\LiberoECS_SystemMaster.inl" />
+    <None Include="src\LiberoScene.inl" />
+    <None Include="src\LibMemoryChunkAllocator.inl" />
+    <None Include="src\System.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6060fb6f-957f-47bf-88e0-f6a45990c61e}</ProjectGuid>
+    <RootNamespace>LiberoEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)bin_temp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\Box2D\include;$(SolutionDir)3rdParty\SDL2\include;$(SolutionDir)3rdParty\SDL2_image\include;$(SolutionDir)3rdParty\SDL2_ttf\include;$(SolutionDir)3rdParty\Visual Leak Detector\include;$(SolutionDir)3rdParty\GLFW\GLFWx32\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)PCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\Box2D\include;$(SolutionDir)3rdParty\SDL2\include;$(SolutionDir)3rdParty\SDL2_image\include;$(SolutionDir)3rdParty\SDL2_ttf\include;$(SolutionDir)3rdParty\Visual Leak Detector\include;$(SolutionDir)3rdParty\GLFW\GLFWx32\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)PCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\Box2D\include;$(SolutionDir)3rdParty\SDL2\include;$(SolutionDir)3rdParty\SDL2_image\include;$(SolutionDir)3rdParty\SDL2_ttf\include;$(SolutionDir)3rdParty\Visual Leak Detector\include;$(SolutionDir)3rdParty\GLFW\GLFWx64\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)PCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\Box2D\include;$(SolutionDir)3rdParty\SDL2\include;$(SolutionDir)3rdParty\SDL2_image\include;$(SolutionDir)3rdParty\SDL2_ttf\include;$(SolutionDir)3rdParty\Visual Leak Detector\include;$(SolutionDir)3rdParty\GLFW\GLFWx64\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)PCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

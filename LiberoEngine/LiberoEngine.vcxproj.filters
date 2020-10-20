@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\PCH.cpp" />
+    <ClCompile Include="src\BulletComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CharacterComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColliderComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CoreSettings.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventDispatcher.cpp">
+      <Filter>Patterns\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FamilyTypeID.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileMaster.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FPSComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>CoreEntities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameTime.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GridComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HierarchyWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ICharacterState.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ICommand.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IComponent.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IEvent.cpp">
+      <Filter>Patterns\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ILibAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui.cpp">
+      <Filter>UI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_demo.cpp">
+      <Filter>UI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_draw.cpp">
+      <Filter>UI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui_sdl.cpp">
+      <Filter>UI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImGui\imgui_widgets.cpp">
+      <Filter>UI\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImmediateUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InspectorWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IObserver.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyEvent.cpp">
+      <Filter>Patterns\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LiberoEngine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LiberoGame.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LiberoRenderer_SDL.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LiberoUnix.cpp">
+      <Filter>Patterns\Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LiberoWindowBase.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibLinearAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibPoolAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibStackAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logger.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LoggerWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryMaster.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MiscEvent.cpp">
+      <Filter>Patterns\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MouseEvent.cpp">
+      <Filter>Patterns\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Note.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsMaster.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RendererOpenGL.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourcesWindowImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidbodyComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneManager.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpaceMath.cpp">
+      <Filter>Misc\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpawnComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpriteComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SubjectMaster.cpp">
+      <Filter>Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysBulletMovement.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysDebugRendering.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysInput.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysMovement.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysPhysics.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysRendering.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SysSpriteAnimator.cpp">
+      <Filter>CoreSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TopMenuImGui.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformComponent.cpp">
+      <Filter>CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ContentMaster.cpp">
+      <Filter>Misc\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Loader.cpp">
+      <Filter>Misc\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputMaster.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\PCH.h" />
+    <ClInclude Include="src\BulletComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CharacterComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColliderComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Component.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ComponentContainer.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CoreSettings.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS_Engine.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS_Includes.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EntityContainer.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventContainer.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventDispatcher.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventMaster.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FamilyTypeID.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileMaster.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FPSComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>CoreEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameTime.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GridComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Handle.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HierarchyWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ICharacterState.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ICommand.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IComponent.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IEntity.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IEvent.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ILibAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ILiberoLocator.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imconfig.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imgui.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imgui_internal.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui_sdl.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImmediateUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGuiStyleLibrary.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGuiPremadeWindows.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imstb_rectpack.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imstb_textedit.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImGui\imstb_truetype.h">
+      <Filter>UI\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InspectorWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IObserver.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ISystem.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KeyEvent.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoECS_ComponentMaster.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoECS_EntityMaster.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoECS_SystemMaster.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoGame.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoMacros.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoMath.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoMemory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoRenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoRenderer_SDL.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoSystems.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoUnix.h">
+      <Filter>Patterns\Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LiberoWindowBase.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibLinearAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibMemoryChunkAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibPoolAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibStackAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Logger.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LoggerWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemoryMaster.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MiscEvent.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MouseEvent.h">
+      <Filter>Patterns\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyComponents.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Note.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsMaster.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RendererOpenGL.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourcesWindowImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RigidbodyComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneManager.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpaceMath.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpawnComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SpriteComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SubjectMaster.h">
+      <Filter>Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysBulletMovement.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysDebugRendering.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysInput.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysMovement.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysPhysics.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysRendering.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SysSpriteAnimator.h">
+      <Filter>CoreSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TopMenuImGui.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformComponent.h">
+      <Filter>CoreComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector2.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector3.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector4.h">
+      <Filter>Misc\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ContentMaster.h">
+      <Filter>Misc\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS_Defines.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Loader.h">
+      <Filter>Misc\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputMaster.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Component.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\ECS_Engine.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\Entity.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\EntityContainer.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\Event.inl">
+      <Filter>Patterns\Events</Filter>
+    </None>
+    <None Include="src\EventMaster.inl">
+      <Filter>Patterns\Events</Filter>
+    </None>
+    <None Include="src\IEntity.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\ILiberoLocator.inl">
+      <Filter>Patterns</Filter>
+    </None>
+    <None Include="src\ISystem.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\LiberoECS_ComponentMaster.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\LiberoECS_EntityMaster.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\LiberoECS_SystemMaster.inl">
+      <Filter>ECS</Filter>
+    </None>
+    <None Include="src\LiberoScene.inl">
+      <Filter>Scenes</Filter>
+    </None>
+    <None Include="src\LibMemoryChunkAllocator.inl">
+      <Filter>Memory</Filter>
+    </None>
+    <None Include="src\System.inl">
+      <Filter>ECS</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CoreComponents">
+      <UniqueIdentifier>{253d414d-5c12-4a7e-8d3f-ce36b3cf3747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreSystems">
+      <UniqueIdentifier>{cd1d47a5-5b39-4224-afb5-5d69ee3624e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{aef20942-81bd-472d-80ab-fe1c65c1f634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b9a73266-7949-4420-974d-4e11d162b99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns">
+      <UniqueIdentifier>{6dd6a849-a7bf-4c73-af68-40ee8727bd7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Events">
+      <UniqueIdentifier>{1d7bbad8-375a-4bef-abad-2ee34f2cce7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{3990d98e-23ba-49ec-8719-70fc7dbc8bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{5de8b04f-6173-4c68-8756-46628ebf3ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreEntities">
+      <UniqueIdentifier>{cb70445a-c59f-4c21-b0ca-988cc2b9a952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{082615e5-30a8-4043-8340-82568503917d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{1fafecd4-ffe7-44e7-865a-ef05d2af9642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\ImGui">
+      <UniqueIdentifier>{39fd5954-3906-432e-b1c4-6bb4cdfb5494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Math">
+      <UniqueIdentifier>{1ee44be0-78b1-424b-98cf-84e9d41d5eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{970bb275-f097-4070-8533-ea4265ce2ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{fec9bfaa-9c95-49f7-9006-053bc70b286f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Unix">
+      <UniqueIdentifier>{f2742141-4c6e-4fc4-b942-087055a4f478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{92e8806d-ed0d-4df5-ab20-27a9b55f0346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{9cb29a24-c1a6-4a04-acce-c18dca6a6597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Content">
+      <UniqueIdentifier>{6715a977-c3aa-4523-8b2d-28cf384d98f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

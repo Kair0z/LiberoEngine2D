@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="BubbleBobbleGame.cpp" />
+    <ClCompile Include="FPSComponent.cpp">
+      <Filter>MyComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="BB_LevelParser.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_FPSCounter.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="BubbleState.cpp">
+      <Filter>MyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_BubbleBehaviour.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerState.cpp">
+      <Filter>MyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_PlayerBehaviour.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyState.cpp">
+      <Filter>MyStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_EnemyBehaviour.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="BBLevel.cpp">
+      <Filter>MyScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_LevelSwitch.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_CharacterSaver.cpp">
+      <Filter>MySystems</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>MyScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Sys_ScoreLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BubbleBobbleGame.h" />
+    <ClInclude Include="FPSComponent.h">
+      <Filter>MyComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="BB_LevelParser.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="MySprites.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_FPSCounter.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleState.h">
+      <Filter>MyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_BubbleBehaviour.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h">
+      <Filter>MyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_PlayerBehaviour.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyState.h">
+      <Filter>MyStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_EnemyBehaviour.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLevel.h">
+      <Filter>MyScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_LevelSwitch.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_CharacterSaver.h">
+      <Filter>MySystems</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>MyScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Sys_ScoreLogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MyComponents">
+      <UniqueIdentifier>{16db1fc5-cf27-459a-ad84-3f2091b0a9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyScenes">
+      <UniqueIdentifier>{dccfec8e-fd5c-47ef-97bd-3a4e188d8d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyStates">
+      <UniqueIdentifier>{419f7489-d5f7-4b6b-98cb-d94fab8dd015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{4faad3b4-c06c-475e-b479-9c6fc4737fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySystems">
+      <UniqueIdentifier>{e856f4ed-cf64-4a85-b9c6-334073b9ef0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
